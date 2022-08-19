@@ -58,16 +58,48 @@
 		8FBB57F928AD44730074BB64 /* InstagridTest */ = {
 			isa = PBXGroup;
 			children = (
-				8FBB57FA28AD44730074BB64 /* AppDelegate.swift */,
-				8FBB57FC28AD44730074BB64 /* SceneDelegate.swift */,
-				8FBB57FE28AD44730074BB64 /* ViewController.swift */,
-				8FBB580028AD44730074BB64 /* Main.storyboard */,
-				8FBB580328AD44740074BB64 /* Assets.xcassets */,
-				8FBB580528AD44740074BB64 /* LaunchScreen.storyboard */,
+				8FBB581028AD54FD0074BB64 /* Model */,
+				8FBB581128AD55060074BB64 /* Controller */,
+				8FBB581228AD552C0074BB64 /* View */,
+				8FBB581328AD554F0074BB64 /* Supporting Files */,
 				8FBB580828AD44740074BB64 /* Info.plist */,
 				8FBB580E28AD449D0074BB64 /* fonts */,
 			);
 			path = InstagridTest;
+			sourceTree = "<group>";
+		};
+		8FBB581028AD54FD0074BB64 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8FBB581128AD55060074BB64 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8FBB57FE28AD44730074BB64 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8FBB581228AD552C0074BB64 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8FBB580028AD44730074BB64 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8FBB581328AD554F0074BB64 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8FBB57FA28AD44730074BB64 /* AppDelegate.swift */,
+				8FBB57FC28AD44730074BB64 /* SceneDelegate.swift */,
+				8FBB580328AD44740074BB64 /* Assets.xcassets */,
+				8FBB580528AD44740074BB64 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
