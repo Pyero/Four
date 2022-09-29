@@ -25,16 +25,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="b6F-6h-S65">
-                                <rect key="frame" x="98.666666666666671" y="177" width="177.66666666666663" height="57.666666666666657"/>
+                                <rect key="frame" x="119.66666666666667" y="178.33333333333334" width="135.66666666666663" height="56.333333333333343"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQS-Zy-v1Q">
-                                        <rect key="frame" x="69.999999999999986" y="0.0" width="38" height="24"/>
+                                        <rect key="frame" x="48.999999999999986" y="0.0" width="38" height="24"/>
                                         <rect key="contentStretch" x="0.69999999999999996" y="0.0" width="1" height="1"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="Arrow Up" title=""/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe up to share" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IdM-OC-AMb">
-                                        <rect key="frame" x="0.0" y="32" width="177.66666666666666" height="25.666666666666671"/>
+                                        <rect key="frame" x="0.0" y="32" width="135.66666666666666" height="24.333333333333329"/>
                                         <fontDescription key="fontDescription" name="Delm-Medium" family="Delm" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -59,7 +59,7 @@
                                                             <action selector="didPressTopLeftButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xC2-MP-DAl"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JuU-Kn-Zur">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JuU-Kn-Zur">
                                                         <rect key="frame" x="147.66666666666663" y="0.0" width="131.33333333333337" height="131.33333333333334"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
@@ -80,17 +80,23 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="b3j-2U-vLM">
                                                 <rect key="frame" x="0.0" y="147.33333333333331" width="279" height="131.66666666666669"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75d-bb-5Zh">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75d-bb-5Zh">
                                                         <rect key="frame" x="0.0" y="0.0" width="131.66666666666666" height="131.66666666666666"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="Plus"/>
+                                                        <connections>
+                                                            <action selector="didPressBottomLeftButtom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LIp-tr-Jaq"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUZ-d0-hWY">
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUZ-d0-hWY">
                                                         <rect key="frame" x="147.66666666666663" y="0.0" width="131.33333333333337" height="131.66666666666666"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="Plus"/>
+                                                        <connections>
+                                                            <action selector="didPressBottomRightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gzo-RU-Zcr"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -224,6 +230,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="bottomLeftButton" destination="75d-bb-5Zh" id="4hA-hR-r8T"/>
                         <outlet property="bottomRightButton" destination="MUZ-d0-hWY" id="DmC-0m-wAU"/>
                         <outlet property="topLeftButton" destination="Yvs-oy-wwv" id="rF6-TB-7Vf"/>
                         <outlet property="topRightButton" destination="JuU-Kn-Zur" id="8LH-lS-AY7"/>
