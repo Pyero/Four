@@ -25,18 +25,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="b6F-6h-S65">
-                                <rect key="frame" x="119.66666666666667" y="178.33333333333334" width="135.66666666666663" height="56.333333333333343"/>
+                                <rect key="frame" x="110.66666666666669" y="175" width="154" height="59.666666666666657"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQS-Zy-v1Q">
-                                        <rect key="frame" x="48.999999999999986" y="0.0" width="38" height="24"/>
+                                        <rect key="frame" x="57.999999999999986" y="0.0" width="38" height="24"/>
                                         <rect key="contentStretch" x="0.69999999999999996" y="0.0" width="1" height="1"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="Arrow Up" title=""/>
+                                        <connections>
+                                            <action selector="didPressSwipeUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6wh-TC-MUW"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe up to share" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IdM-OC-AMb">
-                                        <rect key="frame" x="0.0" y="32" width="135.66666666666666" height="24.333333333333329"/>
-                                        <fontDescription key="fontDescription" name="Delm-Medium" family="Delm" pointSize="22"/>
-                                        <nil key="textColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe up to share" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IdM-OC-AMb">
+                                        <rect key="frame" x="0.0" y="32" width="154" height="27.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="Delm-Medium" family="Delm" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </label>
                                 </subviews>
@@ -120,41 +123,53 @@
                                     <constraint firstAttribute="trailing" secondItem="07h-w3-eQd" secondAttribute="trailing" constant="16" id="rs5-kz-hZG"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagrid" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEq-bI-ksH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagrid" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEq-bI-ksH">
                                 <rect key="frame" x="16" y="47" width="343" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="gbg-s3-qQD"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ThirstySoftRegular" family="Thirsty Soft" pointSize="38"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="ThirstySoftRegular" family="Thirsty Soft" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Z9V-Th-7OU">
                                 <rect key="frame" x="30.666666666666657" y="581.66666666666663" width="314" height="94"/>
                                 <subviews>
-                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9u-Uc-wPi">
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9u-Uc-wPi">
                                         <rect key="frame" x="0.0" y="0.0" width="104" height="94"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="Layout 1" title=""/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Selected" title="">
+                                            <backgroundConfiguration key="background" image="Layout 1" imageContentMode="center"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="didPressLayoutOneButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dQW-n8-tda"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPZ-nU-iqV">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPZ-nU-iqV">
                                         <rect key="frame" x="105" y="0.0" width="104" height="94"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="Layout 2" title="">
-                                            <backgroundConfiguration key="background"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Selected" title="">
+                                            <backgroundConfiguration key="background" image="Layout 2" imageContentMode="center"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="didPressLayoutTwoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pWO-rF-gqV"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z45-pY-OiJ">
+                                    <button clipsSubviews="YES" contentMode="center" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z45-pY-OiJ">
                                         <rect key="frame" x="210" y="0.0" width="104" height="94"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="Layout 3" title="">
-                                            <backgroundConfiguration key="background"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="Layout 3" backgroundImage="Selected"/>
+                                        <state key="disabled" image="Selected" backgroundImage="Selected"/>
+                                        <state key="selected" image="Selected" backgroundImage="Selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <state key="highlighted" image="Selected" backgroundImage="Selected"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="Layout 3" imageContentMode="center"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="didPressLayoutThreeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dsN-sO-vEj"/>
@@ -230,8 +245,11 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="allFourView" destination="07h-w3-eQd" id="F2Z-ta-TwJ"/>
                         <outlet property="bottomLeftButton" destination="75d-bb-5Zh" id="4hA-hR-r8T"/>
                         <outlet property="bottomRightButton" destination="MUZ-d0-hWY" id="DmC-0m-wAU"/>
+                        <outlet property="imageView" destination="BQS-Zy-v1Q" id="9dv-wv-lhL"/>
+                        <outlet property="layout3Button" destination="z45-pY-OiJ" id="uBX-81-c3w"/>
                         <outlet property="topLeftButton" destination="Yvs-oy-wwv" id="rF6-TB-7Vf"/>
                         <outlet property="topRightButton" destination="JuU-Kn-Zur" id="8LH-lS-AY7"/>
                     </connections>
@@ -247,5 +265,6 @@
         <image name="Layout 2" width="80" height="80"/>
         <image name="Layout 3" width="80" height="80"/>
         <image name="Plus" width="13.333333015441895" height="13.333333015441895"/>
+        <image name="Selected" width="80" height="80"/>
     </resources>
 </document>

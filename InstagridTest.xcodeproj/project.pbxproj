@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F9E146129250830007697A9 /* ThirstySoftRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8F9E146029250825007697A9 /* ThirstySoftRegular.otf */; };
+		8F9E14632925085C007697A9 /* Delm-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8F9E146229250859007697A9 /* Delm-Medium.otf */; };
 		8FBB57FB28AD44730074BB64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBB57FA28AD44730074BB64 /* AppDelegate.swift */; };
 		8FBB57FD28AD44730074BB64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBB57FC28AD44730074BB64 /* SceneDelegate.swift */; };
 		8FBB57FF28AD44730074BB64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBB57FE28AD44730074BB64 /* ViewController.swift */; };
 		8FBB580228AD44730074BB64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FBB580028AD44730074BB64 /* Main.storyboard */; };
 		8FBB580428AD44740074BB64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FBB580328AD44740074BB64 /* Assets.xcassets */; };
 		8FBB580728AD44740074BB64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FBB580528AD44740074BB64 /* LaunchScreen.storyboard */; };
-		8FBB580F28AD449D0074BB64 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 8FBB580E28AD449D0074BB64 /* fonts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F9E146029250825007697A9 /* ThirstySoftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThirstySoftRegular.otf; sourceTree = "<group>"; };
+		8F9E146229250859007697A9 /* Delm-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delm-Medium.otf"; sourceTree = "<group>"; };
 		8FBB57F728AD44730074BB64 /* InstagridTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagridTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FBB57FA28AD44730074BB64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FBB57FC28AD44730074BB64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -25,7 +28,6 @@
 		8FBB580328AD44740074BB64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FBB580628AD44740074BB64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FBB580828AD44740074BB64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8FBB580E28AD449D0074BB64 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +65,6 @@
 				8FBB581228AD552C0074BB64 /* View */,
 				8FBB581328AD554F0074BB64 /* Supporting Files */,
 				8FBB580828AD44740074BB64 /* Info.plist */,
-				8FBB580E28AD449D0074BB64 /* fonts */,
 			);
 			path = InstagridTest;
 			sourceTree = "<group>";
@@ -97,6 +98,8 @@
 				8FBB57FA28AD44730074BB64 /* AppDelegate.swift */,
 				8FBB57FC28AD44730074BB64 /* SceneDelegate.swift */,
 				8FBB580328AD44740074BB64 /* Assets.xcassets */,
+				8F9E146029250825007697A9 /* ThirstySoftRegular.otf */,
+				8F9E146229250859007697A9 /* Delm-Medium.otf */,
 				8FBB580528AD44740074BB64 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
@@ -162,8 +165,9 @@
 			files = (
 				8FBB580728AD44740074BB64 /* LaunchScreen.storyboard in Resources */,
 				8FBB580428AD44740074BB64 /* Assets.xcassets in Resources */,
+				8F9E14632925085C007697A9 /* Delm-Medium.otf in Resources */,
+				8F9E146129250830007697A9 /* ThirstySoftRegular.otf in Resources */,
 				8FBB580228AD44730074BB64 /* Main.storyboard in Resources */,
-				8FBB580F28AD449D0074BB64 /* fonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
