@@ -97,6 +97,7 @@ final class ViewController: UIViewController {
          
         setSelected(button: layout3Button)
     }
+     // Action pour activité le swipe up
     
     @IBAction func didPressSwipeUp(_ sender: Any) {
         selectedButton = .imageView
@@ -163,7 +164,7 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
     }
     
     
-    // MARK: - ANIMATION
+    // MARK: - ANIMATION SWIPE et SHARE
     
     @objc func executeSwipeAction(_ sender: UISwipeGestureRecognizer) {
         UIView.transition(with: imageView,
